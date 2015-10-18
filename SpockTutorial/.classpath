@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/groovy"/>
+	<classpathentry kind="src" path="test/main/java"/>
+	<classpathentry kind="src" path="test/main/groovy"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="testlib/groovy-all-2.4.3.jar"/>
+	<classpathentry kind="lib" path="testlib/spock-core-1.0-groovy-2.4.jar"/>
+	<classpathentry kind="lib" path="testlib/cglib-nodep-3.1.jar"/>
+	<classpathentry kind="lib" path="testlib/objenesis-2.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
