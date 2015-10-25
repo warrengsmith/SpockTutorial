@@ -1,4 +1,4 @@
-package com.jalamor.spock.example;
+package com.jalamor.junit.example;
 
 import org.junit.Assert;
 import org.junit.Test;
