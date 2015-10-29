@@ -5,6 +5,10 @@ import org.junit.Test;
 
 import com.jalamor.spock.FizzBuzzJava;
 
+/**
+ * Regular vanilla JUnit test for comparison to Spock tests.
+ * @author Warren Smith
+ */
 public class FizzBuzzTestWithJUnit {
 
 	@Test

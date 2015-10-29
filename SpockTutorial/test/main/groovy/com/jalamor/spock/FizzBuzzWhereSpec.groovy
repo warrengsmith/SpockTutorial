@@ -3,6 +3,10 @@ package com.jalamor.spock
 import spock.lang.Specification
 import spock.lang.Unroll
 
+/**
+ * Spock test to demonstrate use of the 'where:' code block and @Unroll annotation.
+ * @author Warren Smith
+ */
 class FizzBuzzWhereSpec extends Specification {
 
 	@Unroll

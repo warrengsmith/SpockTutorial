@@ -1,9 +1,12 @@
 package com.jalamor.spock;
 
 import com.jalamor.spock.FizzBuzzJava;
-
 import spock.lang.Specification
 
+/**
+ * Spock test to demonstrate use of the 'expect:' code block.
+ * @author Warren Smith
+ */
 public class FizzBuzzExpectSpec extends Specification {
 
 	def 'FizzBuzz test for 1'() {

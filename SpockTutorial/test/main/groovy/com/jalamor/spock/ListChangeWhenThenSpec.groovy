@@ -2,6 +2,11 @@ package com.jalamor.spock
 
 import spock.lang.Specification
 
+/**
+ * Spock test to demonstrate use of 'when:' and 'then:' code blocks as well as defining
+ * and adding items to a Groovy list.
+ * @author Warren
+ */
 class ListChangeWhenThenSpec extends Specification {
 
 	def list = ['a', 'b', 'c', 'd']

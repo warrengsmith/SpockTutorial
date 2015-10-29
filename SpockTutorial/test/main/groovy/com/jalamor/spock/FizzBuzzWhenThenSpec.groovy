@@ -1,9 +1,12 @@
 package com.jalamor.spock
 
 import com.jalamor.spock.FizzBuzzJava;
-
 import spock.lang.Specification
 
+/**
+ * Spock test to demonstrate use of 'when:' and 'then:' code blocks.
+ * @author Warren Smith
+ */
 class FizzBuzzWhenThenSpec extends Specification {
              
          def 'FizzBuzz test for 5 expects Buzz'() {

@@ -4,7 +4,6 @@ package com.jalamor.spock;
  * FizzBuzz program prints the numbers from 1 to 100, but for multiples of three
  * it prints “Fizz” and for multiples of five it prints “Buzz”. For numbers
  * which are multiples of both three and five it prints “FizzBuzz”.
- * 
  * @author Warren Smith
  */
 public class FizzBuzzJava {
@@ -12,7 +11,6 @@ public class FizzBuzzJava {
 	/**
 	 * Loop from 1 to 100 and call the fizzBuzz function for each number,
 	 * printing the result to the console
-	 * 
 	 * @param args
 	 */
 	public static void main(String args[]) {
@@ -28,7 +26,6 @@ public class FizzBuzzJava {
 	 * 3. if the number divides by 5 exactly, append 'Buzz'
 	 * 4. if it did not divide by 3 or 5, append the number
 	 * 5. return the result (either "Fizz", "Buzz", "FizzBuzz", or the number passed in)
-	 * 
 	 * @param number
 	 * @return String
 	 */

@@ -13,8 +13,7 @@ import org.junit.runners.Parameterized.Parameters;
 import com.jalamor.spock.FizzBuzzJava;
 
 /**
- * Example of a JUnit parameterized test
- * 
+ * Example of a JUnit parameterized test.
  * @author Warren Smith
  * @version 1.0
  */
@@ -29,7 +28,6 @@ public class FizzBuzzParameterizedTest {
 
 	/**
 	 * Set up a collection of inputs and expected results
-	 * 
 	 * @return Collection<Object[]>
 	 */
 	@Parameters
@@ -46,7 +44,6 @@ public class FizzBuzzParameterizedTest {
 	/**
 	 * Construct the test case using input and expected value from the
 	 * collection
-	 * 
 	 * @param input
 	 * @param expected
 	 */

@@ -2,6 +2,10 @@ package com.jalamor.spock
 
 import spock.lang.Specification
 
+/**
+ * Spock test to demonstrate use of the old() method.
+ * @author Warren Smith
+ */
 class DemonstrateOldMethodSpec extends Specification {
 
 	def list = ['1', '2', '3', '4']
