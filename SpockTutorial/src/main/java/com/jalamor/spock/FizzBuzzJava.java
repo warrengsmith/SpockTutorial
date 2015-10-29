@@ -1,4 +1,4 @@
-package com.jalamor.spock.java;
+package com.jalamor.spock;
 
 /**
  * FizzBuzz program prints the numbers from 1 to 100, but for multiples of three
@@ -7,7 +7,7 @@ package com.jalamor.spock.java;
  * 
  * @author Warren Smith
  */
-public class FizzBuzz {
+public class FizzBuzzJava {
 
 	/**
 	 * Loop from 1 to 100 and call the fizzBuzz function for each number,

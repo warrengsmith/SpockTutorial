@@ -1,6 +1,6 @@
-package com.jalamor.groovy
+package com.jalamor.spock
 
-class FizzBuzz2 {
+class FizzBuzzGroovyIdiomatic {
  
     static void main (String... args) {
 		(1..100).each{println "${it%3?'':'Fizz'}${it%5?'':'Buzz'}" ?: it }

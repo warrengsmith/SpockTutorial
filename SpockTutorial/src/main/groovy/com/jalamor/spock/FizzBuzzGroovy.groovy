@@ -1,4 +1,4 @@
-package com.jalamor.groovy
+package com.jalamor.spock
 
 public class FizzBuzzGroovy {
 

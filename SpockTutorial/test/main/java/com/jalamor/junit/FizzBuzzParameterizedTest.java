@@ -1,4 +1,4 @@
-package com.jalamor.junit.example;
+package com.jalamor.junit;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import com.jalamor.spock.java.FizzBuzz;
+import com.jalamor.spock.FizzBuzzJava;
 
 /**
  * Example of a JUnit parameterized test
@@ -60,6 +60,6 @@ public class FizzBuzzParameterizedTest {
 	 */
 	@Test
 	public void test() {
-		assertEquals(expected, FizzBuzz.fizzBuzz(input));
+		assertEquals(expected, FizzBuzzJava.fizzBuzz(input));
 	}
 }
