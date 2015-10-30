@@ -25,5 +25,7 @@ class ListChangeWhenThenSpec extends Specification {
       
 		then: 'expected size is 8'
         list.size() == 8
+		list[7] == 'h'
+		list[0] == 'a'
     }
 }
