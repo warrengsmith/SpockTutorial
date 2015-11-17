@@ -2,6 +2,11 @@ package com.jalamor.spock
 
 import spock.lang.Specification
 
+/**
+ * Spock test class FizzBuzzRandomSpec
+ * @author kahwgs
+ * @version 1.0
+ */
 class FizzBuzzRandomSpec extends Specification {
 
 	/**
@@ -10,14 +15,14 @@ class FizzBuzzRandomSpec extends Specification {
 	def 'FizzBuzz Stub Example'() {
 	
 		given:
-		Random random = Stub()
-		FizzBuzzRandom fbr = new FizzBuzzRandom()
+		MyRandom myRandom = Stub()
+		FizzBuzzRandom fbr = new FizzBuzzRandom(myRandom)
 		
 		when:
-		def resultList = fbr.getRandomizedFizzBuzzList(random)
+		def resultList = fbr.getRandomizedFizzBuzzList()
 		
 		then:
-		random.nextInt(100) >> 5
+		myRandom.getRandomNumber() >> 5
 		resultList.size() == 5
 		resultList[0] == '1'
 		resultList[1] == '2'
@@ -32,14 +37,14 @@ class FizzBuzzRandomSpec extends Specification {
 	def 'FizzBuzz Mock Example'() {
 		
 		given:
-		Random random = Mock()
-		FizzBuzzRandom fbr = new FizzBuzzRandom()
+		MyRandom myRandom = Mock()
+		FizzBuzzRandom fbr = new FizzBuzzRandom(myRandom)
 		
 		when:
-		def resultList = fbr.getRandomizedFizzBuzzList(random)
+		def resultList = fbr.getRandomizedFizzBuzzList()
 		
 		then:
-		1 * random.nextInt(100) >> 5
+		1 * myRandom.getRandomNumber() >> 5
 		resultList.size() == 5
 		resultList[0] == '1'
 		resultList[1] == '2'

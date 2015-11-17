@@ -2,18 +2,34 @@ package com.jalamor.spock;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
+/**
+ * Class FizzBuzzRandom
+ * @author kahwgs
+ * @version 1.0
+ */
 public class FizzBuzzRandom {
 
+	/** Field myRandom. */
+	private MyRandom myRandom;
+	
+	/**
+	 * Constructor
+	 * @param myRandom
+	 */
+	FizzBuzzRandom(final MyRandom myRandom) {
+		this.myRandom = myRandom;
+	}
+	
 	/**
 	 * Loop from 1 to 100 and call the fizzBuzz function for each number,
 	 * printing the result to the console
 	 * @param args
 	 */
 	public static void main(String args[]) {
-		FizzBuzzRandom fbr = new FizzBuzzRandom();
-		System.out.println(fbr.getRandomizedFizzBuzzList(new Random()));
+		MyRandom myRandom = new MyRandom();
+		FizzBuzzRandom fbr = new FizzBuzzRandom(myRandom); // constructor injection
+		System.out.println(fbr.getRandomizedFizzBuzzList());
 	}
 
 	/**
@@ -21,9 +37,9 @@ public class FizzBuzzRandom {
 	 *
 	 * @return List<String>
 	 */
-	public List<String> getRandomizedFizzBuzzList(Random random) {
+	public List<String> getRandomizedFizzBuzzList() {
 		List<String> fizzBuzzList = new ArrayList<>();
-		int max = random.nextInt(100);
+		int max = myRandom.getRandomNumber();
 		for (int number = 1; number <= max; number++) {
 			fizzBuzzList.add(fizzBuzz(number)); 
 		}
