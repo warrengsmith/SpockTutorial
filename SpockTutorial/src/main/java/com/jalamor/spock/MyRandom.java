@@ -13,8 +13,8 @@ public class MyRandom {
 	 * Method getRandomNumber
 	 * @return int
 	 */
-	public int getRandomNumber() {
+	public int getRandomNumber(final int upperLimit) {
 		Random rnd = new Random();
-		return rnd.nextInt(100);
+		return rnd.nextInt(upperLimit);
 	}
 }

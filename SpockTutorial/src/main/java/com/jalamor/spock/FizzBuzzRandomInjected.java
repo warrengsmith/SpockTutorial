@@ -8,7 +8,7 @@ import java.util.List;
  * @author kahwgs
  * @version 1.0
  */
-public class FizzBuzzRandom {
+public class FizzBuzzRandomInjected {
 
 	/** Field myRandom. */
 	private MyRandom myRandom;
@@ -17,7 +17,7 @@ public class FizzBuzzRandom {
 	 * Constructor
 	 * @param myRandom
 	 */
-	FizzBuzzRandom(final MyRandom myRandom) {
+	FizzBuzzRandomInjected(final MyRandom myRandom) {
 		this.myRandom = myRandom;
 	}
 	
@@ -28,7 +28,7 @@ public class FizzBuzzRandom {
 	 */
 	public static void main(String args[]) {
 		MyRandom myRandom = new MyRandom();
-		FizzBuzzRandom fbr = new FizzBuzzRandom(myRandom); // constructor injection
+		FizzBuzzRandomInjected fbr = new FizzBuzzRandomInjected(myRandom); // constructor injection
 		System.out.println(fbr.getRandomizedFizzBuzzList());
 	}
 
@@ -39,7 +39,7 @@ public class FizzBuzzRandom {
 	 */
 	public List<String> getRandomizedFizzBuzzList() {
 		List<String> fizzBuzzList = new ArrayList<>();
-		int max = myRandom.getRandomNumber();
+		int max = myRandom.getRandomNumber(100);
 		for (int number = 1; number <= max; number++) {
 			fizzBuzzList.add(fizzBuzz(number)); 
 		}
