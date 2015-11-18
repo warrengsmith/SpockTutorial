@@ -8,19 +8,19 @@ import spock.lang.Specification
  */
 class DemonstrateOldMethodSpec extends Specification {
 
-	def list = ['1', '2', '3', '4']
-
-	def 'Test that list size is 4'() {
-		expect:
-		list.size() == 4
-	}
-
 	def 'Add two elements to the list and expect that it now has two more than it did originally'() {
-		when:
+		
+		setup: 'Create initial list with 4 elements'
+		def list = ['1', '2', '3', '4']
+		
+		expect: 'expect list size is 4'
+		list.size() == 4
+		
+		when: 'we add two elements to the list'
 		list << '5'
 		list << '6'
 
-		then:
+		then: 'list size is 2 more than it was before'
 		list.size() == old(list.size()) + 2
 	}
 }
